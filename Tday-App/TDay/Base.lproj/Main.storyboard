@@ -17,7 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWI-Em-RLc" userLabel="BaseView">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="jAi-zx-gss">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWI-Em-RLc" userLabel="BaseView">
                                 <rect key="frame" x="0.0" y="556" width="414" height="340"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udz-VO-Cku">
@@ -37,7 +40,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.90085827464788737" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="2Mb-fN-MC6" secondAttribute="bottom" constant="81" id="05x-y8-9cK"/>
                                     <constraint firstItem="2Mb-fN-MC6" firstAttribute="centerX" secondItem="iWI-Em-RLc" secondAttribute="centerX" id="62d-kO-Vct"/>
@@ -71,14 +74,14 @@
                                     <action selector="launch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GD2-em-Mde"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGq-Lp-zL2" userLabel="TodayView" customClass="RoundView" customModule="TDay" customModuleProvider="target">
+                            <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGq-Lp-zL2" userLabel="TodayView" customClass="RoundView" customModule="TDay" customModuleProvider="target">
                                 <rect key="frame" x="64.5" y="282" width="285" height="400"/>
                                 <subviews>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho Chi Minh enters Hanoi after withdrawl of French troops" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pl4-X1-p9k">
-                                        <rect key="frame" x="27.5" y="64" width="230" height="150"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho Chi Minh enters Hanoi after withdrawl of French troops" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pl4-X1-p9k">
+                                        <rect key="frame" x="27.5" y="64" width="230" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="230" id="4zR-df-CbO"/>
-                                            <constraint firstAttribute="height" constant="150" id="fKI-kZ-97G"/>
+                                            <constraint firstAttribute="height" constant="200" id="fKI-kZ-97G"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -94,8 +97,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Lee Roth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-2l-1qh">
-                                        <rect key="frame" x="42.5" y="304" width="200" height="60"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Lee Roth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-2l-1qh">
+                                        <rect key="frame" x="42.5" y="324" width="200" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="7Tf-1G-HJK"/>
                                             <constraint firstAttribute="height" constant="60" id="rwg-ua-MtD"/>
@@ -105,7 +108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Famous Birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enp-Lc-UGP">
-                                        <rect key="frame" x="17.5" y="264" width="250" height="30"/>
+                                        <rect key="frame" x="17.5" y="284" width="250" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kU8-19-A61"/>
                                             <constraint firstAttribute="width" constant="250" id="nLu-Sd-UQS"/>
@@ -118,7 +121,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="0EB-CZ-kL5"/>
-                                    <constraint firstItem="enp-Lc-UGP" firstAttribute="top" secondItem="Pl4-X1-p9k" secondAttribute="bottom" constant="50" id="AeX-Nd-m0F"/>
+                                    <constraint firstItem="enp-Lc-UGP" firstAttribute="top" secondItem="Pl4-X1-p9k" secondAttribute="bottom" constant="20" id="AeX-Nd-m0F"/>
                                     <constraint firstItem="ZP8-Id-FY6" firstAttribute="top" secondItem="gGq-Lp-zL2" secondAttribute="top" constant="29" id="B6j-Zu-His"/>
                                     <constraint firstItem="Pl4-X1-p9k" firstAttribute="top" secondItem="ZP8-Id-FY6" secondAttribute="bottom" constant="5" id="BwS-TW-egz"/>
                                     <constraint firstItem="enp-Lc-UGP" firstAttribute="centerX" secondItem="gGq-Lp-zL2" secondAttribute="centerX" id="Eyw-mg-oBr"/>
@@ -129,8 +132,8 @@
                                     <constraint firstItem="Pl4-X1-p9k" firstAttribute="centerX" secondItem="gGq-Lp-zL2" secondAttribute="centerX" id="pvT-mq-gvI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -163,16 +166,21 @@
                             <constraint firstItem="Udz-VO-Cku" firstAttribute="top" secondItem="Ueg-AB-IVh" secondAttribute="bottom" constant="22" id="5rP-0S-vMr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gGq-Lp-zL2" secondAttribute="bottom" constant="180" id="8JC-pN-QdN"/>
                             <constraint firstAttribute="bottom" secondItem="iWI-Em-RLc" secondAttribute="bottom" id="I3d-SI-aPZ"/>
+                            <constraint firstAttribute="bottom" secondItem="jAi-zx-gss" secondAttribute="bottom" id="JN6-5C-2J1"/>
                             <constraint firstItem="Ueg-AB-IVh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OBw-cx-ONB"/>
                             <constraint firstItem="iWI-Em-RLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YoK-fO-ZdV"/>
                             <constraint firstItem="YDr-vJ-gDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bM8-7n-Qls"/>
+                            <constraint firstItem="jAi-zx-gss" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cYF-hW-kpj"/>
+                            <constraint firstItem="jAi-zx-gss" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iJ0-lH-ffs"/>
                             <constraint firstItem="YDr-vJ-gDv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="kya-Vp-aDE"/>
+                            <constraint firstItem="jAi-zx-gss" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sQS-AX-AJC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wij-W2-48y" secondAttribute="trailing" constant="20" id="wFu-vc-Z6P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="TodayHeading" destination="ZP8-Id-FY6" id="gCu-M0-UM5"/>
+                        <outlet property="backdrop" destination="jAi-zx-gss" id="X41-BY-vCl"/>
                         <outlet property="baseViewPallete" destination="iWI-Em-RLc" id="2Ec-5B-vgZ"/>
                         <outlet property="birthdayBody" destination="jYe-2l-1qh" id="KaA-Tz-JuK"/>
                         <outlet property="birthdayHeading" destination="enp-Lc-UGP" id="4Ev-QL-55g"/>
@@ -187,4 +195,7 @@
             <point key="canvasLocation" x="139.13043478260872" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Backdrop" width="512" height="800"/>
+    </resources>
 </document>

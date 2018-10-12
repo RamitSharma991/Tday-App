@@ -22,6 +22,11 @@ class RoundView: UIView {
     
     func setupView() {
         layer.cornerRadius = cornerRadius
+            self.layer.shadowOpacity = 0.60
+            self.layer.shadowRadius = 5
+            self.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+          
+        
 
     }
 }
